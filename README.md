@@ -14,4 +14,4 @@ continues until the end of file.
 Data files that contains large strings of binary sequence; is downloaded, in the flash 
 memory.
 
-Please set up the rom according your data and you can easily change detection sequence in the code.
+Please set up the rom according to your data and also you can easily change detection sequence in the code.
