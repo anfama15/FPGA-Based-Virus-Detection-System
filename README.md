@@ -14,4 +14,4 @@ continues until the end of file.
 Data files that contains large strings of binary sequence; is downloaded, in the flash 
 memory.
 
-Please set up the rom according to your data and also you can easily change detection sequence in the code.
+You can design your own test bench to either identify the pattern directly from the test bench then please comment out the block ram instantiation or set up the rom according to your data( or use the one provided and therefore don't change anything with ip rom) and also you can easily change detection sequence in the code.
