@@ -1,17 +1,9 @@
-# FPGA_CEP
-Design and implemention of algorithmic state machine (ASM) comprising of controller and Datapath
-implemented in RTL based model, which can find how many times a virus pattern equal to 10111
-occurs in a data file.
+The goal of this project is to design and implement an algorithmic state machine (ASM) that can detect how many times a virus pattern of 10111 occurs in a data file. The ASM consists of a controller and a datapath that is implemented in RTL-based model. The ASM is responsible for scanning the data file bit by bit, and once the virus pattern is found, the scanning process restarts from the next bit.
 
-Example for pattern matching: In pattern matching, a sequence is scanned bit by bit and once a 
-required pattern is found, the scan restarts from the next bit. For example, we have 11011101011 in 
-the data file, the scanning process start from the left, we have 11 at that start (first and second bit) 
-that is different from the virus pattern (10111), since it’s a mismatch, the scan starts form the second 
-bit. Upon restarting the scan from second bit, we have found that the virus pattern exists in the next 
-four bits, so the counter is incremented to one and the scan restarts from sixth bit and this process 
-continues until the end of file.
+To start the project, a data file containing a large string of binary sequences is downloaded and stored in the flash memory. The ASM is designed to scan the data file and count the number of times the virus pattern appears. The ASM uses a pattern matching technique to scan the data file bit by bit, and once the virus pattern is found, the scanning process restarts from the next bit.
 
-Data files that contains large strings of binary sequence; is downloaded, in the flash 
-memory.
+To implement the ASM, the controller and datapath are designed in RTL-based model. The controller is responsible for controlling the datapath operations and ensuring that the ASM operates correctly. The datapath is responsible for performing the pattern matching and counting the number of occurrences of the virus pattern.
 
-You can design your own test bench to either identify the pattern directly from the test bench then please comment out the block ram instantiation or set up the rom according to your data( or use the one provided and therefore don't change anything with ip rom) and also you can easily change detection sequence in the code.
+The ASM is tested using a test bench that can either identify the pattern directly from the test bench or use the provided data file. The test bench is designed to simulate the operation of the ASM and ensure that it is working correctly. The ASM is tested using different detection sequences to ensure that it can detect the virus pattern accurately.
+
+Overall, this project involves designing and implementing an ASM that can detect the number of times a virus pattern occurs in a data file. The ASM is designed using a controller and datapath implemented in RTL-based model, and it is tested using a test bench to ensure that it operates correctly.
